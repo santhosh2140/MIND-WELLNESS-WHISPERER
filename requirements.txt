@@ -1,0 +1,7 @@
+streamlit
+streamlit-lottie
+pyttsx3
+llama-index
+requests
+st-click-detector
+streamlit-extras
