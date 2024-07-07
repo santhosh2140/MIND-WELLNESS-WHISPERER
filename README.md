@@ -1,6 +1,6 @@
 # Mind Wellness Whisperer 🧘‍♀️
 
-Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbot designed to support mental wellness by providing empathetic and supportive conversations. It utilizes the Ollama language model to offer a variety of interaction modes tailored to different user needs.
+Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbot designed to support mental wellness by providing empathetic and supportive conversations. It utilizes the Ollama language model (llama2) to offer a variety of interaction modes tailored to different user needs.
 
 ## Features
 
@@ -14,7 +14,7 @@ Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbo
 
 ### Prerequisites
 
-- Docker
+- Docker (for Ollama services)
 - Python 3.8 or above
 - Git
 
@@ -31,7 +31,11 @@ Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbo
     pip install -r requirements.txt
     ```
 
-3. **Build and run the Docker container for model download**:
+3. **Download Ollama services and llama2 model**:
+    - Visit [Ollama website](https://ollama.ai/) and download the Ollama services.
+    - Download the llama2 model and place it in the appropriate directory in your project.
+
+4. **Build and run the Docker container for model download**:
     - Ensure Docker is installed and running on your machine.
     - Use the following command to build the Docker image:
         ```bash
@@ -61,6 +65,8 @@ Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbo
 - **requirements.txt**: The list of dependencies required to run the project.
 - **Dockerfile**: Configuration file to create a Docker image for the project.
 - **lottie_files**: A directory for storing Lottie animation files.
+- **ollama_services/**: Directory for downloaded Ollama services.
+- **llama2_model/**: Directory for the downloaded llama2 model.
 
 ## Customization
 
