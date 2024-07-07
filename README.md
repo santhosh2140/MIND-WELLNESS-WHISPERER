@@ -12,6 +12,14 @@ Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbo
 
 ## Installation
 
+### Prerequisites
+
+- Docker
+- Python 3.8 or above
+- Git
+
+### Steps
+
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/mind-wellness-whisperer.git
@@ -22,6 +30,17 @@ Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbo
     ```bash
     pip install -r requirements.txt
     ```
+
+3. **Build and run the Docker container for model download**:
+    - Ensure Docker is installed and running on your machine.
+    - Use the following command to build the Docker image:
+        ```bash
+        docker build -t mind-wellness-whisperer .
+        ```
+    - Run the Docker container:
+        ```bash
+        docker run -p 8501:8501 mind-wellness-whisperer
+        ```
 
 ## Usage
 
@@ -40,6 +59,7 @@ Welcome to the Mind Wellness Whisperer project! This is a Streamlit-based chatbo
 
 - **app.py**: The main application file containing the Streamlit interface and chatbot logic.
 - **requirements.txt**: The list of dependencies required to run the project.
+- **Dockerfile**: Configuration file to create a Docker image for the project.
 - **lottie_files**: A directory for storing Lottie animation files.
 
 ## Customization
@@ -61,6 +81,7 @@ This project uses:
 - [Ollama Language Model](https://ollama.ai/)
 - [pyttsx3](https://pypi.org/project/pyttsx3/)
 - [Lottie Animations](https://lottiefiles.com/)
+- [Docker](https://www.docker.com/)
 
 ---
 
